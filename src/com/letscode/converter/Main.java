@@ -8,12 +8,15 @@ public class Main {
 
         Scanner temperatureScan = new Scanner(System.in);
 
-        System.out.print("Hello! Please enter a temperature in Celsius so we can " +
-                "convert it to Fahrenheit: ");
+        final String ENTER_CELSIUS_MESSAGE = "Hello! \n" +
+                "Please enter a temperature in Celsius so " +
+                "the program can convert it to Fahrenheit: ";
+
+        System.out.print(ENTER_CELSIUS_MESSAGE);
 
         float celsius = temperatureScan.nextFloat();
 
-        System.out.printf("%.2f ºC equals to %.2f ºF",
+        System.out.printf("%.2f ºC = %.2f ºF",
                 celsius,
                 convertToFahrenheit(celsius));
     }
